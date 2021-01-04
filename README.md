@@ -101,9 +101,9 @@ SSH into the control node (jumpbox) and follow the steps below:
  
  -Run the playbook, the command to check to see if it was installed correctly
    
-   -Install_elk.yml and location: /etc/ansible/isntall_elk.yml
+    -Install-elk.yml and location: /etc/ansible/isntall-elk.yml
    
-   -Edit host file to add servers (web and elk) ip addresses
+    -Edit host file to add servers (web and elk) ip addresses
    
 -The URL in order to check to see if your ELK server is running is: http:// (public IP of ELK VM):5601/app/kibana
 
