@@ -93,72 +93,16 @@ These Beats allow us to collect the following information from each machine:
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
-COPYING PLAYBOOK FILES TO ANSIBLE:
 
 SSH into the control node (jumpbox) and follow the steps below:
 
-We must copy the playbooks files to the ansible folder:
+ -Copy the playbooks files to etc/ansible/.
+ -Update the host file to include IP addresses for the servers and the ports
+ -Run the playbook, the command to check to see if it was installed correctly
+   -Install_elk.yml and location: /etc/ansible/isntall_elk.yml
+   -Edit host file to add servers (web and elk) ip addresses
+-The URL in order to check to see if your ELK server is running is: http:// (public IP of ELK VM):5601/app/kibana
 
-First- CD into where ansible is located
-  -cd /etc/ansible
-  
-Next we must create a place to send these playbooks
-  - mkdir files
-  
-Now we must copy the playbookS by using git
-  -git clone https://github/cgadwood/project-1.git
-  
-Then copy files over
-   -cp project-1/playbooks .
-   -cp project-1/files/* ./files 
-  
-UPDATING THE HOST FILE
-
-After this, 
-- Update the hosts file:
-
-First CD back into ansible:
-  
-  cd /etc/ansible
-  
-Then 'cat' the hosts file so we can update this with our IP addresses to our webservers and elk. Scrolling down to the corresponding headings,  these should be changed to look like the following:
-
-[webservers]
- 
- 10.0.0.5 (IP of the first web server VM)
- 
- 10.0.0.6 (IP of the second web server VM)
-
-[elk]
-
-10.1.0.4 (IP of the ELK vm)
-
-
-
-
-RUNNING THE PLAYBOOKS
-
-
-First must be in the correct folder (this is the folder where the commands should be)
-
--cd /etc/ansible
-
-
-Then the command to run the playbook is: 
-
--ansible-playbook (playbook name) (machine where playbook was installed)
- 
- -Example: ansible-playbook install_elk.yml elk
-                                         
-                                         
-After giving the ELK time to start, enter the following web address into any search bar:
-
-  -Http://(public IP of VM)(port number)
-       
-       -Example: http://13.66.14.95:5601
-        
-        
-The same command can be done for our filebeat and metricbeat playbooks
         
 
 
