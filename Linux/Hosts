@@ -1,0 +1,17 @@
+Editing the host should reflect these ideas:
+
+First CD back into ansible:
+  
+  cd /etc/ansible
+  
+Then 'cat' the hosts file so we can update this with our IP addresses to our webservers and elk. Scrolling down to the corresponding headings,  these should be changed to look like the following:
+
+[webservers]
+ 
+ 10.0.0.5 (IP of the first web server VM)
+ 
+ 10.0.0.6 (IP of the second web server VM)
+
+[elk]
+
+10.1.0.4 (IP of the ELK vm)
