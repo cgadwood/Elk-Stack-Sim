@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-
+See images folder, "Diagram"
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the below file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -71,7 +71,7 @@ This playbook will:
 - Create a "play" to use more memory in order for the files to be stored.
 - The final "play" should be to launch and download elk container, making sure to add the published ports. 
 
-A duplicate of the ELK playbook is below:
+A duplicate of the ELK playbook is found in the Ansible folder 
 
 
 
@@ -89,6 +89,7 @@ These Beats allow us to collect the following information from each machine:
 
 - Filebeat watches for changes in the filesystem. It's main purpose is to collect log events for log files or locations and sends them to Elasticsearch.
 
+Metricbeat success screenshot found in "images" folder
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
