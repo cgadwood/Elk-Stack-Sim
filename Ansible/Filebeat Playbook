@@ -9,7 +9,7 @@
   - name: install filebeat deb file
     command: dpkg -i filebeat-7.4.0-amd64.deb
 
-  - name: drop in filebeat.yml 
+  - name: drop in filebeat config file
     copy:
       src: /etc/ansible/filebeat-config.yml
       dest: /etc/filebeat/filebeat.yml
@@ -23,7 +23,3 @@
   - name: start filebeat service
     command: service filebeat start
 
-  - systemd:
-      name: filebeat
-      enabled: yes
-      masked: no
