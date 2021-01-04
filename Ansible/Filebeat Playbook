@@ -3,10 +3,10 @@
   become: yes
   tasks:
 
-  - name: download filebeat deb
+  - name: download filebeat deb from artifacts.elastic.co
     command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.0-amd64.deb
  
-  - name: install filebeat deb
+  - name: install filebeat deb file
     command: dpkg -i filebeat-7.4.0-amd64.deb
 
   - name: drop in filebeat.yml 
