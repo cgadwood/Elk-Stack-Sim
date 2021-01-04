@@ -141,22 +141,22 @@ In order to run the playbooks, here are the list of commands:
 First must be in the correct folder (this is the folder where the commands should be)
 cd /etc/ansible
 
+
 Then the command to run the playbook is: ansible-playbook (playbook name) (machine where playbook was installed)
                                          Example: ansible-playbook install_elk.yml elk
                                          
+                                         
 After giving the ELK time to start, enter the following web address into any search bar:
+
 
 Http://(public IP of VM)(port number)
         Example: http://13.66.14.95:5601
+        
         
 The same command can be done for our filebeat and metricbeat playbooks
   -install_filebeat.yml webservers
   -install_metricbeat.yml webservers 
         
         
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
 
 
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
