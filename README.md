@@ -134,9 +134,9 @@ Then 'cat' the hosts file so we can update this with our IP addresses to our web
 10.1.0.4 (IP of the ELK vm)
 
 
+
 RUNNING THE PLAYBOOKS
 
-In order to run the playbooks, here are the list of commands:
 
 First must be in the correct folder (this is the folder where the commands should be)
 
@@ -156,10 +156,6 @@ After giving the ELK time to start, enter the following web address into any sea
         
         
 The same command can be done for our filebeat and metricbeat playbooks
-
--install_filebeat.yml webservers
--install_metricbeat.yml webservers 
-        
         
 
 
