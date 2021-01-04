@@ -135,6 +135,7 @@ Then 'cat' the hosts file so we can update this with our IP addresses to our web
 
 
 
+
 RUNNING THE PLAYBOOKS
 
 
@@ -151,7 +152,7 @@ Then the command to run the playbook is:
                                          
 After giving the ELK time to start, enter the following web address into any search bar:
 
--Http://(public IP of VM)(port number)
+  -Http://(public IP of VM)(port number)
         -Example: http://13.66.14.95:5601
         
         
